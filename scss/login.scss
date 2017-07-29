@@ -1,0 +1,146 @@
+body {
+  background: $blue url(../assets/img/bg.jpeg) center no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.login {
+  margin-top: 5vh;
+  padding: 0 $login-side-padding 125px;
+  background-color: $blue;
+  border-radius: $small-radius;
+  color: $white;
+  font-family: 'Roboto Condensed', sans-serif;
+
+  header {
+    padding-top: 36px;
+
+    h1 {
+      line-height: 58px;
+      font: {
+        weight: 300;
+        size: 40px;
+        family: 'Roboto Condensed', sans-serif;
+      }
+    }
+
+    p {
+      font-weight: 300;
+      font-size: 15px;
+    }
+  }
+
+  .avatar {
+    width: $avatar-dimension;
+    height: $avatar-dimension;
+    background-color: $white;
+    border-radius: 100%;
+    margin: $avatar-dimension / 2 auto 0;
+    position: relative;
+    top: $avatar-dimension / 2;
+    overflow: hidden;
+
+    img {
+      position: absolute;
+      top:0;
+      bottom:0;
+      left:0;
+      right:0;
+    }
+  }
+
+  form {
+    padding: 74px 20px;
+    border: 1px solid $white-opaque;
+    border-radius: $small-radius;
+    font: {
+      size: 18px;
+      weight: 700;
+    }
+
+    .id-number {
+      display: inline-block;
+      line-height: 28px;
+    }
+
+    .change-id {
+      border-radius: $full-radius;
+      background-color: $white-opaque;
+      color: $white;
+      padding: 0 5px;
+      cursor: pointer;
+
+      &:hover {
+        color: $black;
+        background-color: $white;
+      }
+    }
+
+    .password-container {
+      margin: 21px auto;
+
+      .password {
+        border-radius: $small-radius;
+        margin-bottom: 0;
+      }
+
+      .keyboard {
+        margin: 0 15px 0 0;
+        border-radius: $medium-radius;
+
+        &:hover {
+          background-color: $white-opaque;
+        }
+      }
+    }
+  }
+
+  .select {
+    color: $white;
+    font: {
+      size: 15px;
+      weight: 300;
+    }
+
+    &:hover {
+      color: $black;
+    }
+  }
+
+  .go {
+    color: $black;
+    background-color: $white;
+    border-radius: $small-radius;
+    font: {
+      size: 16px;
+      weight: 300;
+    }
+
+    &:hover {
+      background-color: $white-opaque;
+      color: $white;
+      font-weight: 700;
+    }
+  }
+}
+
+footer {
+
+  .menu {
+      padding: 11px 0;
+
+    a {
+      color: $white;
+      opacity: 0.8;
+      padding-left: 0;
+      font: {
+        size: 11px;
+        weight: 700;
+      }
+
+      &:hover {
+        color: $blue;
+      }
+    }
+  }
+}

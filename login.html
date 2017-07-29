@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Log In</title>
+    <link rel="stylesheet" href="css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&amp;subset=latin-ext"
+          rel="stylesheet">
+
+</head>
+<body>
+<div class="row">
+    <div class="small-12 medium-4 large-3 columns">
+        <a href="/" class="logo">
+            <img src="assets/img/efi_logo.png" alt="logo">
+        </a>
+    </div>
+    <div class="small-12 medium-8 large-6 columns">
+        <div class="login text-center">
+            <header>
+                <h1>Login</h1>
+                <p>Aby zaimportować dane zaloguj się do banku</p>
+            </header>
+            <div class="avatar">
+                <img src="assets/img/tux.png" alt="">
+            </div>
+
+            <form>
+
+                <div class="row">
+                    <div class="column small-12">
+                        <span id="id-number" class="id-number">123234345</span>
+                        <button class="change-id">
+                            <span class="show-for-sr">Zmień id</span>
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                </div>
+
+                <fieldset class="password-container">
+                    <div class="row">
+                        <label class="column">
+                            <span class="show-for-sr">Hasło</span>
+                            <input type="password" class="password" id="password">
+                        </label>
+                        <button class="column shrink button small clear keyboard">
+                            <img src="assets/img/keyboard.png" alt="" aria-hidden="true">
+                        </button>
+                    </div>
+                </fieldset>
+
+                <div class="row align-center">
+                    <button class="column small-4 large-3 button clear select">SELECT OTHER</button>
+                    <button class="column small-4 large-3 button go" type="submit">GO</button>
+                </div>
+
+            </form>
+        </div>
+
+        <footer class="row">
+            <nav class="column small-12">
+                <ul class="menu">
+                    <li><a href="">SECURITY</a></li>
+                    <li><a href="">LOGGIN IN</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </nav>
+        </footer>
+
+    </div>
+</div>
+</body>
+</html>
