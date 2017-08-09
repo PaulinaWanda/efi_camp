@@ -1,4 +1,4 @@
-body {
+.login-container {
   background: $blue url(../assets/img/bg.jpeg) center no-repeat;
   background-size: cover;
   min-height: 100vh;
@@ -82,6 +82,20 @@ body {
       .password {
         border-radius: $small-radius;
         margin-bottom: 0;
+
+        & + .error-msg {
+          text-align: left;
+          color: $error-red;
+          display: none;
+        }
+
+        &.error {
+          border-color: $error-red;
+        }
+
+        &.error + .error-msg {
+          display: block;
+        }
       }
 
       .keyboard {

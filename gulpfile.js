@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var $    = require('gulp-load-plugins')();
+var babel = require("gulp-babel");
 
 var sassPaths = [
   'bower_components/normalize.scss/sass',
@@ -18,6 +19,12 @@ gulp.task('sass', function() {
       browsers: ['last 2 versions', 'ie >= 9']
     }))
     .pipe(gulp.dest('css'));
+});
+
+gulp.task("es2015", function () {
+    return gulp.src("js/app.js")
+        .pipe(babel())
+        .pipe(gulp.dest("dist"));
 });
 
 gulp.task('default', ['sass'], function() {
