@@ -1,7 +1,7 @@
 
 
 .logo {
-  margin: 5vh 0 0 auto;
+  margin: 0 0 0 auto;
   width: $logo-dimension;
   height: $logo-dimension;
   border: 2px solid $white-opaque;
@@ -10,7 +10,7 @@
 
   img {
     margin: auto;
-    padding: 43px 32px;
+    padding: 26.875% 20%;
     transition: transform .3s cubic-bezier(0,1.48,.33,-0.81);
 
     &:hover {

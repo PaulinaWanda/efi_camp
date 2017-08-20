@@ -1,32 +1,32 @@
 .login-container {
-  background: $blue url(../assets/img/bg.jpeg) center no-repeat;
+  background: $topaz url(../assets/img/bg.jpeg) center no-repeat;
   background-size: cover;
   min-height: 100vh;
+  padding-top: 5%;
 }
 
 .login {
-  margin-top: 5vh;
-  padding: 0 $login-side-padding 125px;
-  background-color: $blue;
+  padding: 0 $login-side-padding 7.8125rem;
+  background-color: $topaz;
   border-radius: $small-radius;
   color: $white;
   font-family: 'Roboto Condensed', sans-serif;
 
   header {
-    padding-top: 36px;
+    padding-top: 2.25rem;
 
     h1 {
-      line-height: 58px;
+      line-height: 3.625rem;
       font: {
         weight: 300;
-        size: 40px;
+        size: 2.5rem;
         family: 'Roboto Condensed', sans-serif;
       }
     }
 
     p {
       font-weight: 300;
-      font-size: 15px;
+      font-size: .9375rem;
     }
   }
 
@@ -50,24 +50,61 @@
   }
 
   form {
-    padding: 74px 20px;
+    padding: 4.625rem 1.25rem;
     border: 1px solid $white-opaque;
     border-radius: $small-radius;
     font: {
-      size: 18px;
+      size: 1.125rem;
       weight: 700;
+    }
+    .client-id, .password {
+      border-radius: $small-radius;
+      margin-bottom: 0;
+
+      & + .error-msg {
+        background-color: $red;
+        width: 100%;
+        padding: .3125rem;
+        display: none;
+        margin-top: .9375rem;
+        position: relative;
+        border-radius: $small-radius;
+        color: $white;
+
+        &:before {
+          content: "";
+          display: block;
+          position: absolute;
+          top: -.9375rem;
+          left: .9375rem;
+          width: .9375rem;
+          border: {
+            left: transparent .46875rem solid;
+            right: transparent .46875rem solid;
+            bottom: $red .9375rem solid;
+          }
+        }
+      }
+
+      &.error {
+        border-color: $red;
+
+        & + .error-msg {
+          display: block;
+        }
+      }
     }
 
     .id-number {
       display: inline-block;
-      line-height: 28px;
+      line-height: 1.75rem;
     }
 
     .change-id {
       border-radius: $full-radius;
       background-color: $white-opaque;
       color: $white;
-      padding: 0 5px;
+      padding: 0 .3125rem;
       cursor: pointer;
 
       &:hover {
@@ -77,42 +114,43 @@
     }
 
     .password-container {
-      margin: 21px auto;
+      margin: 1.3125rem auto;
 
-      .password {
-        border-radius: $small-radius;
-        margin-bottom: 0;
+      //.password {
+      //  border-radius: $small-radius;
+      //  margin-bottom: 0;
+      //
+      //  & + .error-msg {
+      //    text-align: left;
+      //    color: $red;
+      //    display: none;
+      //  }
+      //
+      //  &.error {
+      //    border-color: $red;
+      //
+      //    & + .error-msg {
+      //      display: block;
+      //    }
+      //  }
+      //}
 
-        & + .error-msg {
-          text-align: left;
-          color: $error-red;
-          display: none;
-        }
+    }
+    .keyboard {
+      margin: 0 0 0 -.9375rem;
+      border-radius: $medium-radius;
 
-        &.error {
-          border-color: $error-red;
-        }
-
-        &.error + .error-msg {
-          display: block;
-        }
-      }
-
-      .keyboard {
-        margin: 0 15px 0 0;
-        border-radius: $medium-radius;
-
-        &:hover {
-          background-color: $white-opaque;
-        }
+      &:hover {
+        background-color: $white-opaque;
       }
     }
   }
 
   .select {
     color: $white;
+    width: 100%;
     font: {
-      size: 15px;
+      size: .9375rem;
       weight: 300;
     }
 
@@ -125,8 +163,9 @@
     color: $black;
     background-color: $white;
     border-radius: $small-radius;
+    width: 100%;
     font: {
-      size: 16px;
+      size: 1rem;
       weight: 300;
     }
 
@@ -141,19 +180,19 @@
 footer {
 
   .menu {
-      padding: 11px 0;
+    padding: .6875rem 0;
 
     a {
       color: $white;
       opacity: 0.8;
       padding-left: 0;
       font: {
-        size: 11px;
+        size: .6875rem;
         weight: 700;
       }
 
       &:hover {
-        color: $blue;
+        color: $topaz;
       }
     }
   }

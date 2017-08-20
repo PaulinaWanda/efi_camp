@@ -1,0 +1,52 @@
+{
+  "name": "",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "a58032f4aafd0eec54803075f5b320d4",
+      "css": "email",
+      "code": 59400,
+      "src": "zocial"
+    },
+    {
+      "uid": "513ac180ff85bd275f2b736720cbbf5e",
+      "css": "home",
+      "code": 59392,
+      "src": "entypo"
+    },
+    {
+      "uid": "7d1ca956f4181a023de4b9efbed92524",
+      "css": "chart-area",
+      "code": 61950,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "ead4c82d04d7758db0f076584893a8c1",
+      "css": "calendar-empty",
+      "code": 61747,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "6083c8aa5e3345476a24a28ac1afaa61",
+      "css": "cog",
+      "code": 59394,
+      "src": "elusive"
+    },
+    {
+      "uid": "b8e88705f42bd79580be828233c65da0",
+      "css": "money",
+      "code": 59393,
+      "src": "linecons"
+    },
+    {
+      "uid": "ccddff8e8670dcd130e3cb55fdfc2fd0",
+      "css": "down-open",
+      "code": 59395,
+      "src": "fontawesome"
+    }
+  ]
+}

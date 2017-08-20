@@ -54,7 +54,8 @@
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
-@import 'colors';
-@import 'dimensions';
+@import 'fontello';
+@import 'variables';
 @import 'logo';
 @import 'login';
+@import 'mainpage';

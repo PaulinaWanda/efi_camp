@@ -1,0 +1,63 @@
+.history {
+  list-style: none;
+  height: 25rem;
+  overflow: auto;
+  border-radius: $small-radius;
+  margin-left: .5rem;
+  font: {
+    family: 'Roboto Condensed', sans-serif;
+    weight: 300;
+  }
+
+  & li {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $white;
+    border-bottom: .0625rem solid $silver;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    & p {
+      margin-bottom: 0;
+    }
+
+    & time {
+      flex: 0 0 4rem;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      margin: .5rem;
+    }
+
+    & > div {
+      flex: 2 1 auto;
+      display: flex;
+      flex-flow: column nowrap;
+      margin: .5rem;
+
+      & .icon-down-open {
+        color: $topaz;
+      }
+    }
+
+    & > p {
+      flex: 0 0 8rem;
+      display: flex;
+      justify-content: flex-end;
+      margin: .5rem;
+
+      & span {
+        font-weight: 700;
+        margin-right: .5rem;
+      }
+
+      & .positive {
+        color: $lime-green;
+      }
+    }
+  }
+}

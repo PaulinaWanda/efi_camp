@@ -1,0 +1,17 @@
+//colors
+$white: #ffffff;
+$topaz: #13bdd2;
+$black: #000000;
+$white-opaque: rgba(255,255,255,.3);
+$red: darken(invert($topaz),15%);
+$pink: #ff1d6d;
+$silver: #dbdede;
+$lime-green: #80c801;
+//dimensions
+$header-height: 7.5rem;
+$logo-dimension: 10rem;
+$avatar-dimension: 5.875rem;
+$small-radius: .3125rem;
+$medium-radius: .625rem;
+$full-radius: 100%;
+$login-side-padding: 1.75rem;

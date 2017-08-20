@@ -21,12 +21,13 @@ gulp.task('sass', function() {
     .pipe(gulp.dest('css'));
 });
 
-gulp.task("es2015", function () {
-    return gulp.src("js/app.js")
+gulp.task("scripts", function () {
+    return gulp.src('js/**/*.js')
         .pipe(babel())
-        .pipe(gulp.dest("dist"));
+        .pipe(gulp.dest('dist'));
 });
 
-gulp.task('default', ['sass'], function() {
-  gulp.watch(['scss/**/*.scss'], ['sass']);
+gulp.task('default', ['scripts','sass'], function() {
+    gulp.watch(['js/**/*.js'], ['scripts']);
+    gulp.watch(['scss/**/*.scss'], ['sass']);
 });
