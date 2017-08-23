@@ -6,7 +6,7 @@
     const btnChangeID = document.querySelector('.change-id');
     const inputPassword = document.querySelector('#password');
     const submitButton = document.querySelector('button[type="submit"]');
-    const homePageURL = '/EfiCampProject1/index.html';
+    const mainPageURL = '/efi_camp/mainpage.html';
 
     const loginInputs = [inputClientID, inputPassword];
 
@@ -38,7 +38,7 @@
                     console.log(response);
                 },
                 success: () => {
-                    window.location.href = homePageURL;
+                    window.location.href = mainPageURL;
                 }
             });
 

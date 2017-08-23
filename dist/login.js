@@ -8,7 +8,7 @@
     var btnChangeID = document.querySelector('.change-id');
     var inputPassword = document.querySelector('#password');
     var submitButton = document.querySelector('button[type="submit"]');
-    var homePageURL = '/EfiCampProject1/index.html';
+    var mainPageURL = '/efi_camp/mainpage.html';
 
     var loginInputs = [inputClientID, inputPassword];
 
@@ -40,7 +40,7 @@
                     console.log(response);
                 },
                 success: function success() {
-                    window.location.href = homePageURL;
+                    window.location.href = mainPageURL;
                 }
             });
         } else {

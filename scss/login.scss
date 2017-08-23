@@ -107,7 +107,7 @@
       padding: 0 .3125rem;
       cursor: pointer;
 
-      &:hover {
+      &:hover, &:focus {
         color: $black;
         background-color: $white;
       }
@@ -140,7 +140,7 @@
       margin: 0 0 0 -.9375rem;
       border-radius: $medium-radius;
 
-      &:hover {
+      &:hover, &:focus {
         background-color: $white-opaque;
       }
     }
@@ -154,7 +154,7 @@
       weight: 300;
     }
 
-    &:hover {
+    &:hover, &:focus {
       color: $black;
     }
   }
@@ -169,7 +169,7 @@
       weight: 300;
     }
 
-    &:hover {
+    &:hover, &:focus {
       background-color: $white-opaque;
       color: $white;
       font-weight: 700;
@@ -191,7 +191,7 @@ footer {
         weight: 700;
       }
 
-      &:hover {
+      &:hover, &:focus {
         color: $topaz;
       }
     }

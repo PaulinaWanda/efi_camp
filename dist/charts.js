@@ -9,16 +9,33 @@
 
     var financeChart = new Chart(ctx1, {
         type: 'line',
-        // label: {
-        //     display: false
-        // },
         data: {
-            labels: ['1', '3', '7', '11', '14', '21', '25'],
+            // labels: ['1', '3', '7', '11', '14', '21', '25'],
             datasets: [{
-                data: [12000, 5000, 3500, 10000, 16500, 7200, 2100],
+                data: [{
+                    x: moment().month(5).date(1).format(),
+                    y: 12000
+                }, {
+                    x: moment().month(5).date(3).format(),
+                    y: 5000
+                }, {
+                    x: moment().month(5).date(7).format(),
+                    y: 3500
+                }, {
+                    x: moment().month(5).date(11).format(),
+                    y: 10000
+                }, {
+                    x: moment().month(5).date(14).format(),
+                    y: 16500
+                }, {
+                    x: moment().month(5).date(21).format(),
+                    y: 7200
+                }, {
+                    x: moment().month(5).date(25).format(),
+                    y: 2100
+                }],
                 backgroundColor: gradient,
                 borderWidth: 0
-
             }]
         },
         options: {
@@ -26,9 +43,17 @@
                 display: false
             },
             scales: {
+                xAxes: [{
+                    type: 'time',
+                    time: {
+                        displayFormats: {
+                            day: 'll'
+                        }
+                    }
+                }],
                 yAxes: [{
                     ticks: {
-                        beginAtZero: false
+                        beginAtZero: true
                     }
                 }]
             }
